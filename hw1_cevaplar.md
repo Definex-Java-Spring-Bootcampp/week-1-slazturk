@@ -3,7 +3,7 @@ a) Spring Framework: Spring açık kaynak kodlu bir framework’tür. Bünyesind
 Spring Boot ise Spring’i temel alan bir framework’tür.
 
 Spring Boot kod parçası örneği;
------------------------------------------------
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,10 +14,10 @@ public class HelloWorldApplication {
         SpringApplication.run(HelloWorldApplication.class, args);
     }
 }
------------------------------------------------
+
 b) Hibernate: Hibernate, veritabanı işlemlerinde kullanılan bir framework'tür. ORM (Object Relational Mapping) aracı olarak kullanılır. ORM, uygulamamızdaki nesnelerle ilişkisel veritabanları arasında bağ kurmamızı sağlayan bir yapıdır. Yerel SQL sorguları yazmadan verileri saklamayı, almayı ve değiştirmeyi kolaylaştırır.
 
------------------------------------------------
+
 @Entity
 @Table(name = "employees")
 public class Employee {
@@ -27,9 +27,7 @@ public class Employee {
     private String name;
     // Other properties, getters, and setters
 }
------------------------------------------------
 
------------------------------------------------
 Session session = sessionFactory.openSession();
 Transaction tx = session.beginTransaction();
 
@@ -38,7 +36,7 @@ List<Employee> employees = session.createQuery("FROM Employee", Employee.class).
 tx.commit();
 session.close();
 //[3]
------------------------------------------------
+
 
 KAYNAKÇA
 [1] https://www.turing.com/kb/spring-vs-spring-boots-best-web-apps
