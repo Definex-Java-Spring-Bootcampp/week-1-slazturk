@@ -1,5 +1,5 @@
 1)
-a) Spring açık kaynak kodlu bir framework’tür. Bünyesinde Spring JDBC, Spring MVC, Spring Security, Spring AOP, Spring ORM, Spring Test gibi modülleri içerir. Spring Framework IoC (Inversion of Control) yazılım tasarım prensibini temel alır, Dependency Injection yapılmasını sağlar.[1] Web uygulamaların geliştirilmesinde ve mikroservis yazılımlarında kullanılabilir.[2]
+a) Spring Framework: Spring açık kaynak kodlu bir framework’tür. Bünyesinde Spring JDBC, Spring MVC, Spring Security, Spring AOP, Spring ORM, Spring Test gibi modülleri içerir. Spring Framework IoC (Inversion of Control) yazılım tasarım prensibini temel alır, Dependency Injection yapılmasını sağlar.[1] Web uygulamaların geliştirilmesinde ve mikroservis yazılımlarında kullanılabilir.[2]
 Spring Boot ise Spring’i temel alan bir framework’tür.
 
 Spring Boot kod parçası örneği;
@@ -27,6 +27,8 @@ public class Employee {
     private String name;
     // Other properties, getters, and setters
 }
+-----------------------------------------------
+
 -----------------------------------------------
 Session session = sessionFactory.openSession();
 Transaction tx = session.beginTransaction();
